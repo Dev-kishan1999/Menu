@@ -6,6 +6,7 @@ import items from './data';
 function App() {
 
   const allCategories = ['all',...new Set(items.map((item)=> item.category))]
+  console.log(allCategories)
   const [menuItems, setMenuItems] = useState(items);
   const [categories,setCategories] = useState(allCategories);
 
